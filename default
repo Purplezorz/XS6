@@ -1,0 +1,10 @@
+default local
+prompt 1
+timeout 3000
+
+label local
+	localboot 0
+
+label install-xenserver
+	kernel mboot.c32
+	append xs6/xen.gz --- xs6/vmlinuz xencons=hvc console=hvc0 console=tty0 install --- xs6/install.img
