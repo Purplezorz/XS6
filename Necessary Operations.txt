@@ -39,3 +39,11 @@ Directories that need to be created:
 ------------------------------------------------------------------------------------------------------
 
 mboot.c32 and pxelinux.0 can be found in cdrom/boot/pxelinux			
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+To mount the XS6.ISO image, create a folder in /mnt/ called "iso"
+Then cd to the directory of the ISO and use the commands "mount -o loop -t iso9660 xs6.iso /mnt/iso"
+When you're finished, unmount it using the command "umount /mnt/iso" 
+{Notice how there is no "n" after the first "u" in that command}
